@@ -1,0 +1,322 @@
+<!-- 
+
+Question - What is HTML ? 
+-> Stands for Hyper Text Markup Language
+-> Standard Markup Language for creating Web pages.
+-> Responsible for the structure of the webpage/website
+-> Made up of elements which tells the browser what and how to display.
+-> Contains all info like - 
+                        - Structure (Elements)
+                        - Content 
+                        - Styles
+                        - fonts etc.,
+
+Example Code - 
+<!DOCTYPE html>
+<html>
+<head></head>
+<body></body>
+</html>
+
+
+-> The <html>, <head> and <body> are known as Tags.
+-> Best practice is to start you html file with a DOCTYPE declaration to tell the browser which kind of document to expect. 
+
+-->
+
+
+
+<!-- 
+
+HTML Elements of Tags - 
+-> Everything in HTML is made up of elements.
+-> Element = Start tag (<tag>) + Content (text-based) + End tag (</tag>)
+-> Tag = Tells the browser the type of the content in the element - image, input types, buttons, text, etc.
+-> There are bunch of tags in HTML - Some are mandatory other are optional. 
+
+-->
+
+
+
+<!-- 
+
+<html>, <body> and <head>
+-> Every HTML page will (generally) contain html, head and body elements/tags.
+-> <html> tag encloses all the page content. Hence, it is also called the ROOT element.
+-> <head> tag defines the metadata (Data about data) of the page like - 
+    - title, which is displayed on the browser tab using the <title> tag.
+    - fonts of the page.
+    - styles, etc.
+-> <body> tag contains the content which is displayed inside the browser window as a page.
+
+-->
+
+
+<!-- 
+
+Header tags from h1 to h6 - 
+-> Headings helps in emphasizing a section of the page.
+-> Section can be seperated by emphasis using different heading sizes.
+-> Largest heading => most important section.
+-> Smallest heading => least important section
+-> html headings are created with h tags - 
+    - h1 (<h1>) -> Largest
+    - h6 (<h6>) -> Smallest  
+
+-->
+
+
+
+<!-- 
+
+Paragraphs (<p>) and BreakLines (<br />)
+-> Most HTML pages have blocks of texts aka paragraphs.
+-> To add paragraphs of text to our page, we use <p> tags.
+-> Browsers add sine (vertical) whitespace before and after the paragraphs block.
+-> A paragraph start on a new line by default.
+-> If you want to start text from new line, But not change paragraph, we can use a break <br /> tag.
+i.e. - 
+<p> Another length paragraph can be here <br />
+    This will be in the same paragraph but will be displayed in new line.</p>
+
+-->
+
+<!-- 
+
+HTML Lists -
+-> Often we need to provide a list on a page - for content or links
+-> Two types of list
+    - Unordered or Bulleted Lists created by <ul>
+    - Ordered or Numbered Lists created by <ol>
+-> Each item under the list must be enclosed in its own <li> tag to denote it as a list -> item.
+
+-->
+
+
+
+<!-- 
+
+HTML Attributes - 
+-> Provide additional information about elements
+-> All HTML tags may also have some additional properties called attributes.
+-> Always specified in the start tag
+-> Attributes usually come in name/value pairs like: name="value"
+-> Here id is an attribute which gives additional information about the paragraph.
+
+eg- 
+<p id="text">
+    Some paragraph text which can be identified by "text"
+</p> 
+
+-->
+
+
+
+<!-- 
+
+Anchor Tag <a> -
+-> HTML <a> tag defines a hyperlink.
+-> You can click on it to jump to a section or a new page.
+-> <a> tag has one important attribute -> href
+-> href -> indicates the link’s destination.
+-> The content for a tag can be text or even an image.
+
+eg- 
+<a href="https://example.com">Example Link</a> 
+
+-->
+
+
+
+<!-- 
+
+Variation in link appearance - 
+-> An unvisited link is underlined and blue
+-> A visited link is underlined and purple
+-> An active link is underlined and red 
+
+-->
+
+
+<!-- 
+
+Link Target - 
+-> By default, the linked page will be displayed in the current browser window
+-> This behaviour can be changed by using target attribute
+-> The target attribute specifies where to open the linked document.
+-> target=“_blank” opens the document in new window or tab.
+-> target=“_parent" opens the document in parent frame.
+-> target=“_top" opens the document in full body of the window. 
+
+-->
+
+
+
+<!-- 
+
+Types of Links - 
+1. Internal Links
+2. External Links
+3. Navigation Links
+4. Bookmarks Links
+
+1. Internal Links - 
+An internal link is a type of hyperlink whose taget or destination resource, such as - an image or document, on the same website or domain.
+
+2. External Links - 
+These are hyperlink that point at (target) any domain other than the domain the link exists on(source). External links have a greater impact on search engine ranking than internal links because they are valued by search engine votes.
+
+3. Navigation Links - 
+The <nav> tag defines a set of navigation links.
+The <nav> tag element is intended for only major block of navigation links.
+It is used for navigational section in the html document.
+It is referred for areas like - main menus across the top of the page.
+
+4. Bookmark Links -
+-> HTML anchor or Html Bookmark is helpful, if you have a long page that you want to allow the users to quickly navigate to different sections in the same web page or you can navigate to targeted location of the other web page.
+The Anchor tag < a > ...< /a > is using for creating bookmark links.
+
+-> Here is an example of Html page and a bookmark in it. When a user click the link "GoTO Bottom" the page scroll down and get there where you bookmarked bottom of the page.
+The first thing you need to create a link that the user can click on to jump to the bookmark.
+<a href="#bottom">GoTO Bottom</a>
+
+-> Next step you need to place an Anchor in your page where you want the user to be able to go to "Bottom".When you click on the link "GoTO Bottom" the page will scroll down and position the bookmark "Bottom" at the top of the browser.
+<a name="bottom" >Bottom</a>
+
+-->
+
+
+
+<!-- 
+
+Absolute and Relative links - 
+-> Absolute links (or urls) => Full Web Address
+    - Example: "https://resuminator.in", "https://crio.do"
+
+
+-> Relative URL ⇒ A link to page within the website i.e. without the https:// or www part
+    - Example: "/home", "/about"
+    - We can also link files like images or other pages using the relative URLs
+    - Example: "about/team.html" → Links to the team.html file in the about folder.
+-> For current folder write the name of the file directly.
+-> For previous folders add ../ before the file name. 
+
+-->
+
+
+<!-- 
+
+id attribute - 
+-> Used to specify unique id for HTML element, i.e. no two elements can have same id
+-> Rule #1: id value is case sensitive
+-> Rule #2: The id name must -
+    - contain at least one letter [A-Za-z]
+    - start with a letter
+    - not contain whitespaces (spaces, tabs) 
+
+-->
+
+
+<!-- 
+
+Link Bookmarks - 
+-> Bookmarks can be useful to navigate within long pages
+-> Used in navigation tabs and to link to sections within a page.
+-> Two Steps to create a link bookmark
+    - Use the id attribute in a tag to create a bookmark
+    - Use the anchor tag's href attribute and set it to #<block-id> to link to it.
+
+eg -
+<a href="#section">Link to Section 1</a>
+<h2 id="section">Section 1</h2> 
+
+-->
+
+
+
+
+<!-- 
+
+Images - 
+-> Images can be displayed on a webpage using the <img> tag.
+    - <img src="url" alt="alternatetext" width="x" height="y" />
+-> The image tags needs few attributes to display the image
+    - src → or source → a link to the image (relative or absolute)
+    - alt → the alt text which is displayed in case the image fails to load.
+    - width → the horizontal length of the image on the page. Should be number (which is generally defined in pixels)
+    - height → the vertical length of the image on the page.
+
+-->
+
+
+<!-- 
+
+Block and Inline Elements - 
+
+Block Elements -                            Inline Elements - 
+Always starts on a new line.                Starts on the same line
+Takes up the full width available.          Takes up the width of the content
+Has a top and a bottom margin.              Has no margin around it
+Can contain an inline element               Cannot contain a block element
+Examples of block elements - <div>, <p>,    Examples - <a>, <span>, <code>
+<h1>, <h2> … <h6>, etc.       
+
+-->
+
+
+
+<!-- 
+
+<div> and <span> - 
+-> The <div> element is often used as a container for other HTML elements.
+-> The <span> element is an inline container used to mark up a part of a text, or a part of a document.
+-> <div> and <span> have no required attributes.
+
+-->
+
+<!-- 
+
+Semantic and Non Semantic Elements - 
+-> <div> and <span> are non-semantic elements
+-> They do not describe anything about the content within them.
+-> Semantic elements in HTML5 clearly describe the content within them.
+-> They work like block elements.
+-> Example - <section><header>, <footer>, <nav>
+
+-->
+
+
+
+<!-- 
+
+Formatting Text with HTML - 
+HTML contains several elements for defining text with a special meaning.
+<b> and <strong> emphasise the text in bold
+<i> and <em> show the text inside it in italics
+<small> is used for smaller paragraph text
+
+
+<b> is a style - we know what "bold" is supposed to look like.
+<strong> however is an indication of how something should be understood.
+Even though <strong> is displayed in bold by the browsers.
+<strong> is a semantic tag - describes the content present inside it.
+Same is the case with <em> and <i>
+<em> stands for emphasis and is semantic, <i> is an italic style.
+
+-->
+
+
+<!-- 
+
+Styling in HTML -
+-> Can be done in many ways using Cascading Style Sheets (CSS)
+-> Each element can have a style attribute to specify styles like font, size, color, etc.
+    <tagname style="property:value;">
+-> The property can be any valid CSS property and value is a CSS value (we will see many properties later)
+    <p style="color: tomato;">
+        Cupcake ipsum dolor sit amet cotton candy tootsie roll pudding. Sesame
+        snaps caramels sweet roll marshmallow tiramisu. Donut
+    </p>
+-> This is called as inline styling in HTML
+
+-->

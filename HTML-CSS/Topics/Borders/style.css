@@ -1,0 +1,36 @@
+p {
+  /* border-style: dotted; */
+  /* border-style: dashed; */
+  /* border-style: groove; */
+  /* border-style: ridge; */
+  /* border-style: outset; */
+  /* border-style: inset; */
+  /* border-style: solid; */
+  /* border-style: none; */
+  /* border-style: solid dotted dashed none; */
+  border-style: dashed solid;
+
+  /* border-width: 2px 4px 6px 8px; */
+  /* border-width: 2px 4px; */
+  border-width: 4px;
+
+  /* border-color: red blue yellow green; */
+  /* border-color: violet purple; */
+  border-color: palevioletred;
+
+  /* Shorthand for these 3 properties. */
+  /* border: width style color */
+  /* border: 3px dashed red; */
+
+  /* Using border properties only on one side - */
+  /* border-side-propertyName : propertyValue */
+  /* border-top-color: blue; */
+  /* border-bottom-width: 8px; */
+
+  /* border-radius: 10%; */
+  /* border-radius: 10px 20px; */
+  /* border-radius: 10px 15px 20px 25px; */
+  /* border-top-left-radius: 30px; */
+  /* border-bottom-right-radius: 35px; */
+  border-radius: 10px;
+}

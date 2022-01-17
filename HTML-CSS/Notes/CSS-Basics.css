@@ -1,0 +1,97 @@
+/* 
+
+Introduction to CSS -
+Stands for Cascading Style Sheets.
+It is a language to define styles like font, size, spacing, colors, etc to HTML elements
+Three ways of specifying styles
+Inline - Using style attribute (already did in last section)
+Internal - Using <style> tag in the head of any HTML document
+External - Specifying the styles in a separate .css file.
+CSS is written inside curly braces {} and in key value pairs which end in a semicolon
+
+ */
+
+/* 
+
+Selectors in CSS - 
+-> Selectors in CSS are used to find elements we want to style
+-> There are multiple selectors which can be used to pick multiple or specific elements
+-> Common selectors are - 
+    - Element Selector - Select elements with same name
+    - Class Selectors - Select elements with same class attribute value
+    - ID selectors - Select element with a particular id 
+
+*/
+
+/* 
+
+Element Selector -
+-> Element selectors can be written inside the <style> tag which is generally placed inside the <head> tag of the HTML document.
+    <head>
+        <style>
+            body {
+                background-color: snow;
+            }
+        </style>
+    </head>
+-> The above snippet will set background-color of the body as snow.
+
+*/
+
+/* 
+
+Class Selectors - 
+-> If we want to style all instances of an HTML element differently, we use the class selector.
+-> To use the class selector for any element we specify the class attribute for that element
+ 	<h1 class="title">Red Title</h1>
+<h1>Normal Title</h1>
+-> Next, we use the .class notation in our CSS to select all the elements with the specified class -
+    <style>
+        .title {
+            color: red;
+        }
+    </style>
+
+*/
+
+/* 
+
+ID Selectors - 
+-> If we want to specifically select a particular element to change the styles?
+-> We use the id selector to do that.
+   	<h2 class="text-red">Podcasts</h2>
+    <p class="text-red">Sample text</p>
+    <h2 id="books-heading">Books</h2>
+-> Then in the styles we use the # symbol to select the item.
+    <style>
+    .text-red {
+    color: red;
+    }
+    #books-heading {
+    color: blueviolet;
+    background-color: yellow;
+    }
+    </style>
+
+
+NOTE : if all three selectors are used on a single element, then most priority will be given to id selectors > class selectors > element selectors
+
+*/
+
+/*
+
+Pseudo-Class Selectors -
+A pseudo class is used to define a special state of an element
+These can be useful when we need to style an element based on some conditions
+There are few pseudo-classes available
+:link -> to change the styles of unvisited links
+:visited -> to change styles of visited links
+:hover -> to change the styles of an element when the cursor is brought over it
+:active -> to change the styles of the selected element
+
+eg -
+article:hover {
+    background-color: lavender;
+}
+
+*/

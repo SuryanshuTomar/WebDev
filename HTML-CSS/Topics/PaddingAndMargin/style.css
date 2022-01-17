@@ -1,0 +1,61 @@
+body {
+  border: 5px solid yellowgreen;
+}
+
+.div1,
+.div2,
+.div3 {
+  border: 5px solid lightblue;
+}
+
+.div1 {
+  background-color: bisque;
+  /* padding: 30px; */
+  /* padding: 2rem */
+
+  /* padding-top: 10px; */
+  /* padding-right: 3em; */
+  /* padding-bottom: 10%; */
+  /* padding-left: 2rem; */
+
+  /* Shorthand for padding in all sides : */
+  /* padding: top right bottom left; */
+  /* padding: topBottom leftRight; */
+  /* padding: 10px 15px; */
+  padding: 10px 20px 30px 40px;
+}
+
+.div2 {
+  /* margin: 10px; */
+
+  /* margin-top: 10px; */
+  /* margin-right: 3em; */
+  /* margin-bottom: 10%; */
+  /* margin-left: 2rem; */
+
+  /* We can also give margin in negative also but not in padding. */
+  /* margin-top: -30px; */
+
+  /* Shorthand for margin in all sides : */
+  /* margin: top right bottom left; */
+  /* margin: topBottom leftRight; */
+  /* margin: 10px 15px; */
+  /* margin: 10px 20px 30px 40px; */
+}
+
+.div3 {
+  width: 400px;
+  /* Margin can be auto too */
+  /* margin: 10px auto; */
+  /* margin: auto; */
+}
+
+/* So, if in top and bottom, two margins are colldes with each other then the browser will render the one which has the bigger value. 
+Note: Margin collapse will only happen in case with top and bottom and not in the case of Left and Right margin, in this case they will just add up from both the margins */
+#marginCollapse1 {
+  margin-bottom: 50px;
+}
+
+#marginCollapse2 {
+  margin-top: 30px;
+}
