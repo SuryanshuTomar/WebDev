@@ -146,7 +146,7 @@ const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"];
 // const deleteMonth = months.splice(5, 1)
 
 // -------------------------------------------------------------------------------------------------------------------------
-// MAP AND REDUCE METHODS
+// MAP AND REDUCE METHODS -
 
 // Array.prototype.map() method
 // array.map(callbackFunction(currentValue, index, arr), thisValue)
@@ -190,3 +190,56 @@ const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"];
 // But this wont work if the the array is nested multiple times.
 
 // NOTE -> Filter, Map and Reduce functions are chainable with each other using the dot operator.
+
+// --------------------------------------------------------------------------------------------------------
+// DIFFERENCE BETWEEN MAP AND FOREACH METHOD -
+
+// 1. The returning value -
+// The first difference between map() and forEach() is the returning value. The forEach() method returns undefined and map() returns a new array with the transformed elements. Even if they do the same job, the returning value remains different.
+
+// Example -
+// const myAwesomeArray = [1, 2, 3, 4, 5]
+// myAwesomeArray.forEach(x => x * x)
+// //>>>>>>>>>>>>>return value: undefined
+
+// myAwesomeArray.map(x => x * x)
+// //>>>>>>>>>>>>>return value: [1, 4, 9, 16, 25]
+
+// 2. Ability to chain other methods -
+// The second difference between these array methods is the fact that map() is chainable. This means that you can attach reduce(), sort(), filter() and so on after performing a map() method on an array.
+// That's something you can't do with forEach() because, as you might guess, it returns undefined.
+
+// Example -
+// const myAwesomeArray = [1, 2, 3, 4, 5]
+// myAwesomeArray.forEach(x => x * x).reduce((total, value) => total + value)
+// //>>>>>>>>>>>>> Uncaught TypeError: Cannot read property 'reduce' of undefined
+// myAwesomeArray.map(x => x * x).reduce((total, value) => total + value)
+// //>>>>>>>>>>>>>return value: 55
+
+// 3. Mutability -
+// In general, the word "mutate" means change, alternate, modify or transform. And in the JavaScript world it has the same meaning.
+// A mutable object is an object whose state can be modified after it is created. So, what about forEach and map regarding mutability?
+
+// Well, according to the MDN documentation:
+// forEach() does not mutate the array on which it is called. (However, callback may do so).
+// map() does not mutate the array on which it is called (although callback, if invoked, may do so).
+// JavaScript is weird.
+
+// The map() method returns an entirely new array with transformed elements and the same amount of data. In the case of forEach(), even if it returns undefined, it will mutate the original array with the callback.
+// Therefore, we see clearly that map() relies on immutability and forEach() is a mutator method.
+
+// 4. Performance Speed -
+// Regarding performance speed, they are a little bit different. But, does it matter? Well, it depends on various things like your computer, the amount of data you're dealing with, and so on.
+
+// Example -
+// const myAwesomeArray = [1, 2, 3, 4, 5]
+
+// const startForEach = performance.now()
+// myAwesomeArray.forEach(x => (x + x) * 10000000000)
+// const endForEach = performance.now()
+// console.log(`Speed [forEach]: ${endForEach - startForEach} miliseconds`)
+
+// const startMap = performance.now()
+// myAwesomeArray.map(x => (x + x) * 10000000000)
+// const endMap = performance.now()
+// console.log(`Speed [map]: ${endMap - startMap} miliseconds`)

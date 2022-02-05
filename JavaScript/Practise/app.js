@@ -1,16 +1,9 @@
 // PRACTISE -
 
-const gas = [20, 30, 56, 100];
-const food = [29, 10, 30];
+const globalNumber = 5;
 
-function calculateTotal(arr) {
-  return arr.reduce((total, item) => total + item);
+function add(num1, num2) {
+  return num1 + num2 + globalNumber;
 }
 
-const totalSpent = calculateTotal(gas) + calculateTotal(food);
-console.log(totalSpent);
-
-console.log({
-  gas: calculateTotal(gas),
-  food: calculateTotal(food),
-});
+console.log(add(3, 4));
