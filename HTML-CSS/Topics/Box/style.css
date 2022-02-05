@@ -1,0 +1,39 @@
+#div1 {
+  background-color: violet;
+  width: 400px;
+  height: 100px;
+}
+
+#div2 {
+  background-color: yellowgreen;
+  width: 400px;
+  height: 100px;
+  padding: 50px;
+  border: 5px solid grey;
+
+  /* By Default - */
+  /* box-sizing: content-box; */
+
+  /* It will include the padding, border and margin size inside the box and content size will be adjusted whereas in content-box the opposite of this happens. */
+  /* box-sizing: border-box; */
+}
+
+/* Initial vs Inherit -  */
+
+#green {
+  color: green;
+}
+
+#blue {
+  color: red;
+}
+
+#initial {
+  /* Initial means the by default value of any property. */
+  color: initial;
+}
+
+#inherit {
+  /* Inherit means taking same value of the property as defined in the parent element. */
+  color: inherit;
+}

@@ -1,0 +1,16 @@
+#overflow {
+  height: 300px;
+  width: 400px;
+  border: 2px solid blueviolet;
+
+  /* Overflow -  */
+  /* overflow: visible; */
+  /* overflow: hidden; */
+  /* overflow: scroll; */
+
+  /* overflow-x: hidden; */
+  /* overflow-y: scroll; */
+
+  /* Recommended to use -  */
+  overflow: auto;
+}

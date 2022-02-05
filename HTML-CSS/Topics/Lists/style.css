@@ -1,0 +1,28 @@
+ul {
+  /* list-style-type: none; */
+  /* list-style-type: disc; */
+  /* list-style-type: circle; */
+  /* list-style-type: armenian; */
+  /* list-style-type: decimal-leading-zero; */
+  /* list-style-type: georgian; */
+  /* list-style-type: square; */
+
+  /* list-style-position: outside; */
+  list-style-position: inside;
+
+  list-style-image: url("/Assets/images.png");
+}
+
+ol {
+  /* list-style-type: upper-alpha; */
+  /* list-style-type: upper-latin; */
+  /* list-style-type: upper-roman; */
+  /* list-style-type: lower-greek; */
+  /* list-style-type: lower-alpha; */
+  /* list-style-type: lower-roman; */
+}
+
+li {
+  border: 1px solid grey;
+  padding: 5px;
+}

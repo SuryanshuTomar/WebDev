@@ -17,7 +17,13 @@ p {
   /* background-size: 1000px 700px; */
   /* background-size: 100% 100%; */
   /* background-size: contain; */
-  background-size: cover;
+  /* background-size: cover; */
+  /* object-position: top left; */
+  /* object-position: center center; */
+
+  /* For foreground image we use object-fit property - */
+  /* object-fit: contain; */
+  /* object-fit: cover; */
 
   /* background-attachment: fixed; */
   /* Shorthand for background properties */

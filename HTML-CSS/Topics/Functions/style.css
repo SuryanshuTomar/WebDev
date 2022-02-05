@@ -1,0 +1,21 @@
+/* Some inmportant css functions -  */
+
+/* This is how we define a variable in CSS - */
+:root {
+  --primary-color: teal;
+  --btn-color: orange;
+  --text-color: black;
+}
+
+#fun {
+  height: 200px;
+  width: calc(100% - 200px);
+  background-color: var(--primary-color);
+}
+
+a {
+  padding: 10px 20px;
+  background-color: var(--btn-color);
+  color: var(--text-color);
+  text-decoration: none;
+}
