@@ -1,9 +1,14 @@
 // PRACTISE -
 
-const globalNumber = 5;
+const result = document.querySelector("#result");
+result.style.backgroundColor = "yellow";
 
-function add(num1, num2) {
-  return num1 + num2 + globalNumber;
-}
+const item = document.querySelectorAll(".special");
+item.forEach(function (item) {
+  item.style.backgroundColor = "violet";
+});
 
-console.log(add(3, 4));
+const lastItem = document.querySelector("li:last-child");
+console.log(lastItem);
+
+

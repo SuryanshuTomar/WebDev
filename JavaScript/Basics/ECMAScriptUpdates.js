@@ -1,5 +1,5 @@
 // Major changes in ECMA Script (ES6) / 2015
-// 1. Let and Const 
+// 1. Let and Const
 // 2. Deconstructing
 // 3. Template strings
 // 4. Object Properties
@@ -9,16 +9,11 @@
 // 8. Spread Operators
 // 9. For in and For of loop
 
-
-
 //------------------------------------------------------------------------------------------------
 
 // 1 -> let and const:
 // var => Global scope/ Function scope
 // let and const => Block scope
-
-
-
 
 // --------------------------------------------------------------------------------------------------
 
@@ -47,9 +42,6 @@
 // let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
 // console.log(total);
 
-
-
-
 // ---------------------------------------------------------------------------------------------------
 
 // 3. Default Arguments:
@@ -58,49 +50,40 @@
 // }
 // console.log(sum(34, 54));
 
-
-
-
 // ---------------------------------------------------------------------------------------------------
 
-// 4. Fat Arrow Function: 
+// 4. Fat Arrow Function:
 // -> Arrow functions allow us to write shorter function syntax
 // hello = () => {
 //   return "Hello World!";
-// } 
+// }
 // console.log(hello());
 
-// -> It gets shorter! If the function has only one statement, and 
+// -> It gets shorter! If the function has only one statement, and
 // the statement returns a value, you can remove the brackets and the return keyword:
-// hello = () => "Hello World!"; 
+// hello = () => "Hello World!";
 // console.log(hello());
 
 // -> If you have parameters, you pass them inside the parentheses
-// hello = (val="DeathSlayer") => "Hello " + val; 
+// hello = (val="DeathSlayer") => "Hello " + val;
 // console.log(hello());
 
 // ->Arrow functions are all anonymous functions
 // -> Unlike traditional function we cannot call arrow function before their definition
 
-
-
-
-
 // ---------------------------------------------------------------------------------------------------
 // REST OPERATOR (...)-
 
-
 // 1. Rest Operator (...argument) is an improved way to handle the function parameter, allowing us to to more easily handle various input as parameters in a function. The Rest Operator syntax allows us to represent an indefinite number of arguments as an array.
 // 2. It gathers/ collect items in an array in case of all data types and object in case of object.
-// 3. It can be used in - 
-    // A. Destructuring
-    // B. Function declarations
+// 3. It can be used in -
+// A. Destructuring
+// B. Function declarations
 // 4. It collects all the extra arguments passed to the function or in destructuring.
 // 5. Rest operators must be put as last parameter, any variable put after the rest parameter will not be assigned any value.
 // 6. The option to use the Rest operator with the objects came in ES2018 - ES8
 
-
-// CODE - 
+// CODE -
 // function sum(a, b) {
 //   console.log("Sum is : ", a + b);
 // }
@@ -109,40 +92,31 @@
 
 // But in this case, we can only pass a fixed number of arguments and if we pass more than this then, it wont, be able to return the sum of that number. So, to pass variable number of arguments we use Rest Operator(...argument).
 
-// CODE - 
+// CODE -
 
-// Rest in Functions - 
+// Rest in Functions -
 // function sum(...input) {
 //   let sum = input.reduce((accumulator, element) => accumulator + element)
 //   console.log("Sum is : ", sum);
 // }
 // sum(4, 5, 3, 3, 56, 5, 7, 8, 9, 56, 0);
 
-// CODE - 
+// CODE -
 
-// Arrays Destructuring- 
+// Arrays Destructuring-
 // const fruits = ['apple', 'orange', 'lemon', 'banana'];
 // const [firstFruit, ...restFruits] = fruits;
 // console.log(firstFruit, restFruits);
-
 
 // Objects Destructuring-
 // const person = { firstName: "John", lastName: "Smith", job: "Developer", age: 35}
 // const {firstName, ...remainingProperties} = person;
 // console.log(firstName, remainingProperties);
 
-
-
 // NOTE - When we talk about Rest Operator, we are talking about using rest operators in function declarations.
-
-
-
-
 
 // --------------------------------------------------------------------------------------------------
 // SPREAD OPERATOR (...) -
-
-
 
 // 1. Spread operator allows an iterable to expand in places where 0+ arguments are expected. It is mostly used in the variable array where there is more than 1 values are expected. It allows us the privilege to obtain a list of parameters from an array. Syntax of Spread operator is same as Rest parameter but it works completely opposite of it.
 // 2. Basically, The JavaScript spread operator (...) allows us to quickly copy all or part of an existing array or object into another array or object.
@@ -151,18 +125,18 @@
 // 5. This will split the data into single items and DEEP COPY them, whereas simple variable assignment will only create a reference to the original array/object which is a SHALLOW COPY.
 // 6. Spread operators can be used as a first parameter or can be used as a second parameter or last parameter. Unlike Rest operators which can be used as a first parameter only.
 // 7. The option to use the spread operator with the objects came in ES2018 - ES8
+// 8. It can also convert the collections into arrays.
 
-// SYNTAX : 
-// var variablename1 = [...value]; 
+// SYNTAX :
+// var variablename1 = [...value];
 
+// CODE -
 
-// CODE - 
-
-// Using with Arrays - 
+// Using with Arrays -
 // Example - 1 :
 // const colors = ['red', 'blue', 'green', 'yellow', 'black'];
 
-// So we can make a copy of this array like this  and perform changes to our need - 
+// So we can make a copy of this array like this  and perform changes to our need -
 // const newColors = ['red', 'blue', 'green', 'yellow', 'black', 'purple', 'violet', 'pink'];
 // console.log(colors, newColors);
 
@@ -183,8 +157,7 @@
 // const friends = [...boys, ...girls, bestFriend];
 // console.log(friends)
 
-
-// Using with Objects - 
+// Using with Objects -
 // const person = { firstName: "John", lastName: "Smith", job: "Developer", age: 35}
 // const newPerson = {...person};
 // console.log(person);
@@ -192,24 +165,12 @@
 
 // Just like in arrays, any change we made to the new object created with the spread operator will not affect the original object as it creates a deep copy of the object. Whereas if we create a copy using just assignment operator that will create a shallow copy and any changes made from that shallow copy Object will affect the original object as well since its not actually creating a copy but its creating a reference pointing to the original object itself in the heap memory.
 
-
-
-
-
 // NOTE - When we talk about SPREAD Operator, we are talking about using SPREAD operators in function invokations.
-
-
-
-
 
 // --------------------------------------------------------------------------------------------------
 // Major changes in ECMA Script (ES7) / 2016 -
 // 1. Array.prototype.includes
 // 2. Exponentiation Operator
-
-
-
-
 
 // ---------------------------------------------------------------------------------------------------
 // 1. Array Includes  -
@@ -217,22 +178,16 @@
 
 // const colors = ['red', 'green', 'blue', 'yellow', 'purple']
 // const isPresent = colors.includes('purple');
-// console.log(isPresent) 
-
-
-
+// console.log(isPresent)
 
 // ---------------------------------------------------------------------------------------------------
-// 2. Exponentiation Operator (**) - 
-// It will return the power of a number -> a**b means a * (times b) 
+// 2. Exponentiation Operator (**) -
+// It will return the power of a number -> a**b means a * (times b)
 
 // console.log(2**3)
 
-
-
-
 // ---------------------------------------------------------------------------------------------------
-// Major changes in ECMA Script (ES8) / 2017 - 
+// Major changes in ECMA Script (ES8) / 2017 -
 // 1. String Padding
 // 2. Object.keys()
 // 3. Object.values()
@@ -240,25 +195,20 @@
 // 5. Object.assign()
 // 6. Array.prototype.flat();
 
-
-
-
 // ---------------------------------------------------------------------------------------------------
-// 1. String Padding - 
+// 1. String Padding -
 
 // -> String.prototype.padStart()
 // -> The padStart() method pads the current string with another string (multiple times, if needed) until the resulting string reaches the given length. The padding is applied from the start of the current string.
 // -> padStart(targetLength)
 // -> padStart(targetLength, padString)
 
-
-
 // -> String.prototype.padEnd()
 // -> The padEnd() method pads the current string with a given string (repeated, if needed) so that the resulting string reaches a given length. The padding is applied from the end of the current string.
 // padEnd(targetLength)
 // -> padEnd(targetLength, padString)
 
-// NOTE: 
+// NOTE:
 // Parameters
 // targetLength
 // The length of the resulting string once the current str has been padded. If the value is less than str.length, then str is returned as-is.
@@ -275,15 +225,11 @@
 // paddedString = paddedString.padEnd(12, "th");
 // console.log(paddedString);
 
-
-
-
 // ---------------------------------------------------------------------------------------------------
-// 2. Object Class Properties - 
+// 2. Object Class Properties -
 
 // -> It is used to create new object instances like let x = new Object() but also can be used to perform operations on objects or its properties.
 // -> Last time we saw that we can access the properties of an object with for...in loop and bracket notation.
-
 
 // SOME OBJECT CLASS METHODS.
 // -> Object.entries(obj) - Returns an array containing all of the [key, value]
@@ -291,11 +237,10 @@
 // -> Object.values(obj) - Returns an array containing the values of the object
 // -> Object.assign(target, source) - Copies the source object to target
 
-
-// eg - 
+// eg -
 // const person = {
-//     name: 'John', 
-//     age: 27, 
+//     name: 'John',
+//     age: 27,
 //     job: 'Developer'
 // };
 // let anotherPerson = {};
@@ -305,32 +250,22 @@
 // console.log(Object.values(person));
 // console.log(Object.assign(anotherPerson, person));
 
-
-
-
-
 // ---------------------------------------------------------------------------------------------------
-// Major changes in ECMA Script (ES9) / 2018 - 
+// Major changes in ECMA Script (ES9) / 2018 -
 // 1. Array.prototype.{flat.flatMap}
 // 2. Object.fromEntries
 
-
-
-
 // ---------------------------------------------------------------------------------------------------
-// 1. Array.prototype.flat() - 
+// 1. Array.prototype.flat() -
 
 // The flat() method creates a new array with all sub-array elements concatenated into it recursively up to the specified depth.
 
-// Syntax - 
+// Syntax -
 // flat()
 // flat(depth)
 
-
-
-
 // ---------------------------------------------------------------------------------------------------
-// 2. Array.prototype.flatMap() - 
+// 2. Array.prototype.flatMap() -
 
 // The flatMap() method returns a new array formed by applying a given callback function to each element of the array, and then flattening the result by one level. It is identical to a map() followed by a flat() of depth 1, but slightly more efficient than calling those two methods separately.
 
@@ -353,10 +288,9 @@
 // Return value
 // A new array with each element being the result of the callback function and flattened to a depth of 1.
 
-
 // NOTE : See Array.prototype.map() for a detailed description of the callback function. The flatMap method is identical to a map followed by a call to flat of depth 1.
 
-// eg - 
+// eg -
 // let arr1 = [1, 2, 3, 4];
 
 // arr1.map(x => [x * 2]);
@@ -369,20 +303,15 @@
 // arr1.flatMap(x => [[x * 2]]);
 // // [[2], [4], [6], [8]]
 
-
-
-
-
 // ---------------------------------------------------------------------------------------------------
-// 3. Object.fromEntries() - 
+// 3. Object.fromEntries() -
 
 // -> Object.fromEntries(obj) - Returns an object from an array of arrays.
 
-
-// eg - 
+// eg -
 // const person = {
-//     name: 'John', 
-//     age: 27, 
+//     name: 'John',
+//     age: 27,
 //     job: 'Developer'
 // };
 
