@@ -22,9 +22,9 @@ var str2 = "This is also a string";
 
 // Objects -
 var marks = {
-  ravi: 34,
-  shubham: 45,
-  harry: 32,
+    ravi: 34,
+    shubham: 45,
+    harry: 32,
 };
 // console.log(marks);
 
@@ -76,3 +76,12 @@ console.log(arr);
 // - variable without a value
 // - missing function Argument
 // - missing object properties
+
+// -------------------------------------------------------------------------------------------------------------
+// Difference between Type Conversion and Type Coercion -
+// 1. A conversion is the result of some kind of computation that returns a new value that is considered equivalent (in his own context) to the given one: you convert a double to an int by shifting it towards the  0th  power and truncating the fractional part.
+
+// 2. A coercion is a reinterpretation of a value under a different scheme: you coerce a double into a char[sizeof(double)] by reading the bits that compose the double as they are the bits that compose a sequence of characters. You are not converting the value it represent (a number) into its textual representation: you are just making up some human unreadable string that is granted to be made up by the same bits.
+
+// More info -
+// https://medium.com/theleanprogrammer/type-conversion-and-coercion-8974afe03b85
