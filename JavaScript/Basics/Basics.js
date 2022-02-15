@@ -48,6 +48,7 @@ var arr1 = [1, 2, 3, 4, 5];
 var arr2 = [2, 3.5, true, "String", undefined, null];
 console.log(arr);
 
+// -------------------------------------------------------------------------------------------------------------
 // Two types of dataypes in JS
 // 1. Primitive Data types: undefined, null, number, string, boolean, Symbol
 // 2. Reference data types: Arrays, Functions and Objects
@@ -85,3 +86,6 @@ console.log(arr);
 
 // More info -
 // https://medium.com/theleanprogrammer/type-conversion-and-coercion-8974afe03b85
+
+// -------------------------------------------------------------------------------------------------------------
+// Strict Mode In JS -
