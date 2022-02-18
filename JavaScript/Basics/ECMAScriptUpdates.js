@@ -48,10 +48,11 @@
 
 // => Why Strict Mode?
 // 1. Strict mode makes it easier to write "secure" JavaScript.
-// 2. Strict mode changes previously accepted "bad syntax" into real errors.
+// 2. Strict mode changes previously accepted "bad syntax" into real errors. Eliminates some JavaScript silent errors by changing them to throw errors.
 // 3. As an example, in normal JavaScript, mistyping a variable name creates a new global variable. In strict mode, this will throw an error, making it impossible to accidentally create a global variable.
 // 4. In normal JavaScript, a developer will not receive any error feedback assigning values to non-writable properties.
 // 5. In strict mode, any assignment to a non-writable property, a getter-only property, a non-existing property, a non-existing variable, or a non-existing object, will throw an error.
+// 6. Fixes mistakes that make it difficult for JavaScript engines to perform optimizations: strict mode code can sometimes be made to run faster than identical code that's not strict mode.
 
 // -----------------------------------------------------------------------------------------------------------
 
