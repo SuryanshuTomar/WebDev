@@ -1,3 +1,28 @@
+// History of JavaScript -
+// => In 1995, Brendan Eich created the very first version of JavaScript in just 10 days. It was called Mocha, but i it aready had many fundamental features of modern JS
+// => In 1996, Mocha changed to LiveScript and then to JavaScript, in order to attrach Java developers. However,JS has nothing to do with Java.
+// => Microsoft launches IE, copying JS from Netscape and calling it Jscript.
+// => In 1997, with a need to standardize the language, ECMA releases ECMAScript 1(ES1), the first official release fro JS(ECMAScript is the standard and JS is the language in practice).
+// => In 2009, ECMAScript 5(ES5) was released with a lots of great new features.
+// => In 2015, ECMAScript 6(ES6) was released: the biggest release update to the language till then.
+// => ECMAScript changes to annual release cycle to ship less features per update.
+
+// -----------------------------------------------------------------------------------------------------------
+// Backward and Forward Compatibility -
+// 1. JavaScript is backwards-compatible. This means that once something is accepted as valid JS, there will not be a future change to the language that causes that code to become invalid JS. JS code written in 1995 - however primitive or limited - should still work now.
+
+// The idea is that JS developers can write code with confidence that their code wouldn’t stop working unpredictably because a browser update is released.
+
+// 2. JS is not forwards-compatible. This means that including a new addition to the language in a program would cause that program to break if it were run in an older JS engine. So if you run a program that uses an ES2019 feature in an engine from 2016, the program will very likely break and crash.
+
+// Transpiler:
+// Typically forwards-compatibility problems related to syntax are solved by using a transpiler to convert from a newer JS syntax to an equivalent older version. The most common transpiler being used is Babel, which is mainly used to convert ECMASCRIPT-2015+ code into backwards compatible version of JavaScript in current and older browsers or environments.
+
+// Polyfill:
+// If the forwards-compatibility issue is not related to new syntax, but rather to a missing API method that was only recently added, the most common solution is to provide a definition for that missing API method that stands in and acts as if the older environment had already had it natively defined. This pattern is called a polyfill (aka "shim").
+
+// -----------------------------------------------------------------------------------------------------------
+
 // Major changes in ECMA Script (ES6) / 2015
 // 1. Let and Const
 // 2. Deconstructing
