@@ -21,6 +21,38 @@
 // Polyfill:
 // If the forwards-compatibility issue is not related to new syntax, but rather to a missing API method that was only recently added, the most common solution is to provide a definition for that missing API method that stands in and acts as if the older environment had already had it natively defined. This pattern is called a polyfill (aka "shim").
 
+// Note:
+// - During Development: Simply use the latest browser version.
+// - During Production: Use Babel to transpile and polyfill your code (converting back to ES5 to ensure browser compatibility for all users. Because ES5 is fully supported in all browsers, down to IE 9 2011)
+
+// -------------------------------------------------------------------------------------------------------------
+// Strict Mode In JS -
+// 1. The "use strict" directive was new in ECMAScript version 5.
+// 2. It is not a statement, but a literal expression, ignored by earlier versions of JavaScript.
+// 3. The purpose of "use strict" is to indicate that the code should be executed in "strict mode".
+// 4. With strict mode, you can not, for example, use undeclared variables.
+// 5. Strict mode is declared by adding "use strict"; to the beginning of a script or a function.
+// 6. Declared at the beginning of a script, it has global scope (all code in the script will execute in strict mode):
+
+// Example
+// "use strict";
+// x = 3.14;       // This will cause an error because x is not declared
+
+// 7. Declared inside a function, it has local scope (only the code inside the function is in strict mode):
+// x = 3.14;       // This will not cause an error.
+// myFunction();
+// function myFunction() {
+//   "use strict";
+//   y = 3.14;   // This will cause an error
+// }
+
+// => Why Strict Mode?
+// 1. Strict mode makes it easier to write "secure" JavaScript.
+// 2. Strict mode changes previously accepted "bad syntax" into real errors.
+// 3. As an example, in normal JavaScript, mistyping a variable name creates a new global variable. In strict mode, this will throw an error, making it impossible to accidentally create a global variable.
+// 4. In normal JavaScript, a developer will not receive any error feedback assigning values to non-writable properties.
+// 5. In strict mode, any assignment to a non-writable property, a getter-only property, a non-existing property, a non-existing variable, or a non-existing object, will throw an error.
+
 // -----------------------------------------------------------------------------------------------------------
 
 // Major changes in ECMA Script (ES6) / 2015

@@ -87,5 +87,4 @@ console.log(arr);
 // More info -
 // https://medium.com/theleanprogrammer/type-conversion-and-coercion-8974afe03b85
 
-// -------------------------------------------------------------------------------------------------------------
-// Strict Mode In JS -
+
