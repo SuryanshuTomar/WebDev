@@ -250,3 +250,41 @@
 // };
 
 // setTimeout(timer.addTen.bind(timer), 500);
+
+// ---------------------------------------------------------------------------------------------------------
+
+// => METHOD BORROWING -
+// - Method borrowing, also known as function borrowing, is, as its name implies, a way for an object to use the methods of another object without redefining that same method.
+// - In JavaScript, we can reuse the method of a function on a different object other than the object it was defined on. Method borrowing helps to keep us from having to write the same code multiple times. Using the predefined JavaScript methods, call(), apply() or bind(), we can borrow methods from other objects without inheriting their properties and methods.
+
+// EXAMPLE -
+// // code block
+// const person1 = {
+//     name: "John",
+//     age: 15,
+//     displayAge: function(){
+//         console.log("He is " + this.age + " years old");
+//     }
+// };
+// person1.displayAge(); /*Output: He is 15 years old*/
+
+// const person2 = {
+//     name: "Mike",
+//     age: 20
+// };
+// person2.displayAge();// Object person2 does not have the displayAge() method and, as seen below, calling this method on person2 gives an error.
+
+// /*Using the call() method*/
+// person1.displayAge.call(person2); //Output: He is 20 years old
+
+// /*Using the bind() method*/
+// person1.displayAge.bind(person2); //Output: He is 20 years old
+
+// /*Using the apply() method*/
+// person1.displayAge.apply(person2); //Output: He is 20 years old
+
+// - All three methods allow us to change the object referred to by this.age() in the first code block.
+// There are many benefits to method borrowing:
+// 1. It prevents the unnecessary duplication of code.
+// 2. It allows the user to use methods of different objects without inheriting.
+// 3. Using method borrowing prevents the replication of methods in multiple object blocks and saves time.
