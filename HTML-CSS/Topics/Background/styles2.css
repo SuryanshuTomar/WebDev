@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: white;
+	text-align: center;
+}
+
+body {
+	background: black;
+}
+
+div {
+	width: 600px;
+	height: 700px;
+	border: 1px solid white;
+	margin: 50px auto;
+	/* background-color: palevioletred;
+	background-image: url(https://images.unsplash.com/photo-1550747545-c896b5f89ff7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c29uaWN8ZW58MHx8MHx8&w=1000&q=80);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed; */
+	/* border: 10px dashed blueviolet;
+	background-clip: padding-box; */
+
+	/* The shorthand CSS Background property order: 
+   background-image 
+   background-position / background-size 
+   background-repeat 
+   background-attachment 
+   background-origin
+   background-clip 
+   background-color 
+   */
+	background: url(https://images.unsplash.com/photo-1550747545-c896b5f89ff7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c29uaWN8ZW58MHx8MHx8&w=1000&q=80)
+		center/cover no-repeat fixed padding-box;
+}
