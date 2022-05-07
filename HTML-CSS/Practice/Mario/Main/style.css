@@ -1,3 +1,8 @@
+* {
+    
+}
+
+
 body,
 ul,
 li,
@@ -197,6 +202,8 @@ p::after {
 	}
 
 	nav li {
+        width: 100%;
+        text-align: center;
 		font-size: 18px;
 	}
 }
