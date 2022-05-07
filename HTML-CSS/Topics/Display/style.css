@@ -1,0 +1,14 @@
+p,
+h2,
+h3,
+h4,
+span,
+a,
+img {
+	border: 1px solid;
+}
+
+img {
+	width: 250px;
+	height: 150px;
+}
