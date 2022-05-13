@@ -1,0 +1,33 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+div {
+	width: 100px;
+	height: 100px;
+	margin: 200px auto;
+	background-color: palevioletred;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+	/* transition-property: width heigth;
+	transition-delay: 0.4s;
+	transition-duration: 1s; */
+	/* transition-timing-function: ease-in; */
+	/* transition-timing-function: ease-out; */
+	/* transition-timing-function: cubic-bezier(0.27, 0.84, 0.51, 0.2); */
+
+	/* Transition Short Hand */
+	/* Order - property duration timing-function delay */
+	transition: all 0.5s linear;
+}
+
+div:hover {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	background-color: limegreen;
+	transform: rotate(120deg);
+}
