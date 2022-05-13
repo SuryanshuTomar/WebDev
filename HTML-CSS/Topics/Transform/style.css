@@ -1,0 +1,30 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+div {
+	width: 100px;
+	height: 100px;
+	margin: 200px auto;
+	background-color: dodgerblue;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+	/* transform: rotate(-10deg);
+	transform: scaleX(2) scaleY(2.5);
+	transform: skewX(10deg) skewY(10deg);
+	transform: translate(-50px, 150px); */
+
+	/* 2D Transform ShortHand for multiple tranforms */
+	/* Order- matrix([scaleX], [skewY], [skewX], [scaleY], [translateX], [translateY]) */
+	/* transform: matrix(2, -1, 0, 2, 30, 100); */
+}
+
+div:hover {
+	cursor: pointer;
+	transition: all 1s linear;
+	transform: rotateY(180deg) rotateX(-180deg);
+	/* transform: matrix(2, -1, 0, 2, 30, 100) rotate(360deg); */
+}
