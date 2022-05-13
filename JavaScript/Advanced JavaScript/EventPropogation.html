@@ -1,65 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
-    <title>Event Propogation</title>
-    <style>
-        .container {
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            font-size: 1.5em;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .parentDiv {
-            margin-top: 5em;
-            background-color: palevioletred;
-            height: 25rem;
-            width: 25rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .childDiv {
-            background-color: paleturquoise;
-            height: 10rem;
-            width: 10rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-    </style>
-</head>
-
-<body>
-     <div class="container">
-         <div>EVENT PROPOGATION</div>
-         <div class="parentDiv" id="parentDivId">
-            <div class="childDiv" id="childDivId">
-            </div>
-        </div>
-    </div>
-    
-    <script>
-    const parentDiv = document.getElementById("parentDivId"); 
-    const childDiv = document.getElementById("childDivId");
-    parentDiv.addEventListener("click", () => { 
-        alert("Parent Div Called"); 
-    });
-
-    childDiv.addEventListener("click", () => { 
-        alert("Child Div Called"); event.stopPropagation(); 
-    });
-        
-    </script>
-    
-</body>
-
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Event Propogation</title>
+		<style>
+			.container {
+				width: 100%;
+				height: 100vh;
+				display: flex;
+				font-size: 1.5em;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+			}
+			.parentDiv {
+				margin-top: 5em;
+				background-color: palevioletred;
+				height: 25rem;
+				width: 25rem;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.childDiv {
+				background-color: paleturquoise;
+				height: 10rem;
+				width: 10rem;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div>EVENT PROPOGATION</div>
+			<div class="parentDiv" id="parentDivId">
+				<div class="childDiv" id="childDivId"></div>
+			</div>
+		</div>
+		<script>
+			const parentDiv = document.getElementById("parentDivId");
+			const childDiv = document.getElementById("childDivId");
+			parentDiv.addEventListener("click", () => {
+				alert("Parent Div Called");
+			});
+			childDiv.addEventListener("click", () => {
+				alert("Child Div Called");
+				event.stopPropagation();
+			});
+		</script>
+	</body>
 </html>
