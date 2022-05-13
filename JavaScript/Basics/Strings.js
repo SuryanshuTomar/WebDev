@@ -205,3 +205,21 @@
 // It returns a new array and does not edit the orginal string.
 // let chars = "a, b, c, d, e, f, g, h, i, j"
 // console.log(chars.split(","));
+
+
+
+
+// ------------------------------------------------------------------------------------------------------------------
+// PADDING :
+
+// The padStart Method :
+
+// The padEnd Method :
+
+// The repeat Method :
+
+// ------------------------------------------------------------------------------------------------------------------
+// AT METHOD :
+
+
+
