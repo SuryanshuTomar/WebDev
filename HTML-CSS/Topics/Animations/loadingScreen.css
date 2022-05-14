@@ -1,0 +1,98 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 90vh;
+	background-color: #0f0f0f;
+}
+
+h3 {
+	display: block;
+	color: white;
+	text-align: center;
+	font-size: 2rem;
+	margin: 20px auto;
+}
+
+div.container {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	margin: 100px auto;
+}
+
+div.circle {
+	position: relative;
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	border: 7px solid dodgerblue;
+	animation-name: circle;
+	animation-duration: 4s;
+	animation-delay: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-fill-mode: forwards;
+}
+
+div.square {
+	position: absolute;
+	width: 35%;
+	height: 35%;
+	background-color: white;
+	margin: 42px;
+	animation-name: square;
+	animation-duration: 2s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-fill-mode: forwards;
+	animation-play-state: running;
+}
+
+@keyframes circle {
+	0% {
+		transform: scale(1);
+		border: 7px solid dodgerblue;
+	}
+	25% {
+		transform: scale(1.3);
+		border: 10px solid palevioletred;
+	}
+	50% {
+		transform: scale(1);
+		border: 7px solid yellow;
+	}
+	75% {
+		transform: scale(1.3);
+		border: 10px solid limegreen;
+	}
+	100% {
+		transform: scale(1);
+		border: 7px solid pink;
+	}
+}
+
+@keyframes square {
+	0% {
+		transform: rotate(0deg);
+		border: 5px solid pink;
+	}
+	25% {
+		border: 15px solid limegreen;
+	}
+	50% {
+		border: 20px solid yellow;
+	}
+	75% {
+		border: 15px solid palevioletred;
+	}
+	100% {
+		transform: rotate(360deg);
+		border: 5px solid dodgerblue;
+	}
+}
