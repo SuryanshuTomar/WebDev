@@ -32,6 +32,7 @@ div {
 
 	/* Animation Short Hand  */
 	/* Order - name duration timing-function iteration-count direction fill-mode playstate */
+	animation: square 4s linear infinite alternate both running;
 }
 
 /* Animation and Keyframes go hand in hand
