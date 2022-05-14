@@ -16,3 +16,61 @@ h3 {
 	font-size: 2rem;
 	margin: 20px auto;
 }
+
+.container {
+	position: relative;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#block {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background: url("./coin-box.png") no-repeat;
+	background-size: 150%;
+	background-position: center;
+	border-radius: 5px;
+	z-index: 1;
+	animation: box 1s linear infinite alternate;
+}
+
+#coin {
+	position: absolute;
+	height: 60px;
+	width: 50px;
+	background: url("./coin.png") no-repeat;
+	background-position: center;
+	background-size: 120%;
+	border-radius: 40%;
+	animation: coin 1s linear infinite forwards;
+}
+
+@keyframes box {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-7px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+@keyframes coin {
+	0% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+	50% {
+		transform: translateY(-150px) rotateY(180deg);
+		opacity: 0.3;
+	}
+	100% {
+		transform: translateY(-250px) rotateY(360deg);
+		opacity: 0;
+	}
+}
