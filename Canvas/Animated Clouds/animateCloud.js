@@ -52,7 +52,7 @@ function CloudParticle(x, y, directionX, directionY, radius, colour) {
 	// Add draw method to CloudParticle prototype -
 	CloudParticle.prototype.draw = function () {
 		ctx.beginPath();
-		// ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+		ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
 
 		// ctx.fillRect(this.x, this.y, this.radius, this.radius);
 		// ctx.strokeRect(this.x, this.y, this.radius, this.radius);
