@@ -11,7 +11,7 @@
 // - TypeScript allows specifying the types of data being passed around within the code, and has the ability to report errors when the types don't match.
 // - For example, TypeScript will report an error when passing a string into a function that expects a number. JavaScript will not.
 // - TypeScript uses compile time type checking. Which means it checks if the specified types match before running the code, not while running the code.
-// - TypesScript includes extra features/functionalities such as - generics, interfaces, tuples etc. But at the same time support modern JS/ECMAScript features like arrow functions, let, const, destructring etc.
+// - TypesScript includes extra features/functionalities such as - generics, interfaces, tuples, enums etc. But at the same time support modern JS/ECMAScript features like arrow functions, let, const, destructring etc.
 
 // -> How to use TypeScript?
 // - A common way to use TypeScript is to use the official TypeScript compiler, which transpiles TypeScript code into JavaScript.
