@@ -32,4 +32,4 @@
 // Note:
 // - Every time we make a change in the typescript script files, we need to transpile it into javascript first otherwise our made changes won't reflect in our application.
 // - So, instead of manually transpiling the typescript code into javascript, we can use the command for watch mode which transpile typescript code into javascript every time we make a change in the typescript files.
-//     Command - npm tsc {typescript_filename.ts} -w
+//     Command - npx tsc {typescript_filename.ts} -w
