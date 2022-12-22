@@ -19,3 +19,8 @@
 // - Watch Command Instead of compiling the tailwind file again and again -
 // Run -> npx tailwindcss -i ./src/input.css -o ./build/css/style.css --watch
 // Run -> npx tailwindcss -i ./src/input.css -o ./build/css/style.css -w
+// Script -> "tailwind": "npx tailwindcss -i ./src/input.css -o ./build/css/styles.css --watch",
+
+// - Tailwind has its own set of rules for, in what manner should we write the tailwind class in html and since, we cant remember the order for all the class. what we can do is we can install prettier using the npm that is specifically made for tailwind css.Tailwind
+// Run -> npm install prettier-plugin-tailwindcss  --save-dev
+// Script -> "prettier": "npx prettier --write **/*.html"
