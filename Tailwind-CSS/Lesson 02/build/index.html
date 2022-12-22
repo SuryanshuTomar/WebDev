@@ -7,7 +7,31 @@
 		<title>Fruitilla</title>
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
-	<body>
-		<div class="bg-red-500 w-52 h-52"></div>
+	<body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
+		<!-- Header -->
+		<header class="sticky top-0 z-10 bg-violet-500 text-white">
+			<!-- NavSection -->
+			<section
+				class="mx-auto flex max-w-4xl items-center justify-between p-4"
+			>
+				<!-- Heading -->
+				<h1 class="text-3xl font-medium">
+					<a href="#hero">🥑 Fruitilla</a>
+				</h1>
+
+				<!-- Menu -->
+				<div>
+					<button
+						id="mobile-open-button"
+						class="text-3xl focus:outline-none sm:hidden"
+					>&#9776</button>
+					<nav class="hidden sm:block space-x-8 text-xl" aria-label="main">
+						<a href="#fruits" class="hover:opacity-70">Our Fruits</a>
+						<a href="#testimonials" class="hover:opacity-70">Testimonials</a>
+						<a href="#contact" class="hover:opacity-70">Contact Us</a>
+					</nav>
+				</div>
+			</section>
+		</header>
 	</body>
 </html>
