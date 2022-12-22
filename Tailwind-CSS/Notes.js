@@ -12,6 +12,10 @@
 //    @tailwind components;
 //    @tailwind utilities;
 // 5. In your tailwind.config.js file replace -> content:[] to content:["*"] or content["./build/*.html"]
-// 6. Run -> npx tailwindcss -i ./src/input.css -o[for output] ./build/css/style.css
+// 6. Run -> npx tailwindcss -i ./src/input.css[src file] -o[for output] ./build/css/style.css[dest file]
 // 7. Add "start":"vite" to your script in package.json
 // 8. Run npm run start command to start a dev server.
+
+// - Watch Command Instead of compiling the tailwind file again and again -
+// Run -> npx tailwindcss -i ./src/input.css -o ./build/css/style.css --watch
+// Run -> npx tailwindcss -i ./src/input.css -o ./build/css/style.css -w
