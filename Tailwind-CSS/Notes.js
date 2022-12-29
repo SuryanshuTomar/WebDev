@@ -8,11 +8,11 @@
 // Method - 1 -
 // 1. Run -> npm init -y
 // 2. Run -> npm install -D tailwindcss postcss autoprefixer vite
-// 3. Run -> npx tailwindcss init -p
+// 3. Run -> npx tailwindcss init -p (initialize tailwindcss with postcss)
 // 4. Create a css file "input.css", add it to your html and edit with this context :
-//    @tailwind base;
-//    @tailwind components;
-//    @tailwind utilities;
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities;
 // 5. In your tailwind.config.js file replace -> content:[] to content:["*"] or content["./build/*.html"]
 // 6. Create an index.html file with basic html template and add the following tag to head part of the template - <link rel="stylesheet" href="../src/input.css" />
 // or add this<script src="https://cdn.tailwindcss.com"></script>
