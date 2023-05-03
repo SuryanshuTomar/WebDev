@@ -29,6 +29,20 @@
 // - To Transpile the type typescript code into javascript -
 //      Command - npx tsc {typescript_filename.ts}
 
+// -> Better way to setup and run and install typescript  ->
+// I. Using Parcel Bundler ->
+// 1. Initial Node project -> npm init -y
+// 2. Install parcel bundler as Dev dependency -> npm install parcel --save-dev
+// 3. Install typescript globally -> npm install -g typescript
+// 4. Initialize the tsconfig file -> tsc --init
+// 5. Uncomment the following line in the tsconfig.json file -> 'noEmitOnError' :true
+// 6. Create a src folder inside the project directory where all our ts file will be.
+// 7. Inside the src folder, create a index.ts.
+// 8. Now create an index.html file and put boilderplate code inside it and also include the script tag -> <script src="index.ts" async></script>. The parcel bundler will automatically detect this index.ts file and replace it with the index.js file which the bundler will create after transpiling it.
+// 9. Now install prettier and set it up using -> "npm install --save-dev --save-exact prettier" and "echo {}> .prettierrc.json"
+// 10. At last set up the script for running the parcel bundler in the package.json file. The script is as follows -> "start": "(npx parcel serve ./index.html) & (npx parcel watch ./index.html)". The "npx parcel server ./index.html" cmd will serve the file to the browser on a local server and "npx parcel watch ./index.html" will continously watch for any changes in the file and recompile the file.
+// 11. Now run cmd in terminal -> npm start
+
 // Note:
 // - Every time we make a change in the typescript script files, we need to transpile it into javascript first otherwise our made changes won't reflect in our application.
 // - So, instead of manually transpiling the typescript code into javascript, we can use the command for watch mode which transpile typescript code into javascript every time we make a change in the typescript files.
