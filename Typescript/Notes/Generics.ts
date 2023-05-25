@@ -6,6 +6,7 @@
 // ------------------------------------------------------------------------
 // - Example 1 -
 // -> Check for an object using Generics-
+// Here, <T>, is what we call a Type Parameter/Type Variable in Generics
 const isObject = <T>(arg: T): boolean => {
   return typeof arg === "object" && !Array.isArray(arg) && arg !== null;
 };
